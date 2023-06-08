@@ -1,5 +1,5 @@
 {
-  "name": "comp-npm",
+  "name": "@talattar/npm-comp-",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -26,7 +26,11 @@
   },
   "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.4"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.4",

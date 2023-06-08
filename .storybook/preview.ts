@@ -1,15 +1,15 @@
-import type { Preview } from '@storybook/react'
-import { withThemeFromJSXProvider } from '@storybook/addon-styling'
-import { CssBaseline, ThemeProvider } from '@mui/material'
-import { createTheme } from '@mui/material/styles'
+import type { Preview } from '@storybook/react';
+import { withThemeFromJSXProvider } from '@storybook/addon-styling';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { createTheme } from '@mui/material/styles';
 // import { lightTheme, darkTheme } from "../src/themes"; // import your custom theme configs
 
 // Load Material UI fonts
-import '@fontsource/roboto/300.css'
-import '@fontsource/roboto/400.css'
-import '@fontsource/roboto/500.css'
-import '@fontsource/roboto/700.css'
-import '@fontsource/material-icons'
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import '@fontsource/material-icons';
 
 const preview: Preview = {
   parameters: {
@@ -21,13 +21,7 @@ const preview: Preview = {
       },
     },
   },
-}
-
-// const withThemeProvider = (Story: any) => (
-//   <MuiThemeProvider theme={theme}>
-//     <Story />
-//   </MuiThemeProvider>
-// )
+};
 
 export const decorators = [
   withThemeFromJSXProvider({
@@ -37,8 +31,8 @@ export const decorators = [
     },
     defaultTheme: 'light',
     Provider: ThemeProvider,
-    // GlobalStyles: CssBaseline,
+    GlobalStyles: CssBaseline,
   }),
-]
+];
 
-export default preview
+export default preview;

@@ -9,13 +9,14 @@ const meta: Meta<typeof MyButton> = {
   argTypes: {
     borderColor: { control: 'color' },
   },
+
   // parameters: {
   //   actions: {
   //     handles: 'click',
   //   },
   // },
   decorators: [withActions],
-  tags: ['tag'],
+  tags: ['autodocs'],
 };
 
 type Story = StoryObj<typeof MyButton>;

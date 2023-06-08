@@ -1,7 +1,7 @@
-import React from "react";
-import Button from "@mui/material/Button";
+import React from 'react'
+import Button from '@mui/material/Button'
 
-const MyButton = ({ label = "", borderColor = "initial" } = {}) => {
+const MyButton = ({ label = '', borderColor = 'initial' } = {}) => {
   return (
     <Button
       variant="contained"
@@ -10,7 +10,7 @@ const MyButton = ({ label = "", borderColor = "initial" } = {}) => {
     >
       {label}
     </Button>
-  );
-};
+  )
+}
 
-export default MyButton;
+export default MyButton
